@@ -14,8 +14,8 @@ services:
   api:
     build: .
     volumes:
-      - ./models:/models
+      - '/media/NAS/Docker/Docker compose/gpt4all/models:/models'
     ports:
       - 8009:8000
     environment:
-      - MODEL=/models/7B/gpt4all-lora-quantized.ggml
+      - MODEL="/media/NAS/Docker/Docker compose/gpt4all/models/wizardlm-13b-v1.1-superhot-8k.ggmlv3.q4_0.bin"
